@@ -40,7 +40,7 @@
       </div>
       <div class="modal-footer">
         <input type="button" id="add_appointment" class="btn btn-primary" value="Confirmar" />
-        <input type="button" id="cancel_appointment" class="btn btn-warning" value="Cancelar Consulta" />
+        <input type="button" id="cancel_appointment" class="btn btn-warning hidden" value="Cancelar Consulta" />
       </div>
       <?php echo $this->Form->end(); ?>
     </div><!-- /.modal-content -->
