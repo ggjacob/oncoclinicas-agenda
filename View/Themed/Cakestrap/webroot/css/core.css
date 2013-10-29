@@ -18,7 +18,7 @@
 
 .agenda-views-select{
 	float: right;
-	width: 32%;
+	width: 12%;
 	font-size: 18px;
 	padding: 20px 20px;
 }
@@ -31,7 +31,7 @@
 
 .date-agenda{
 
-	width: 58%;
+	width: 78%;
 	float: left;
 	padding: 20px 20px;
 }

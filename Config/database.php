@@ -9,4 +9,14 @@ class DATABASE_CONFIG {
 		'password' => 'mysql',
 		'database' => 'agenda',
 	);
+
+
+    public $test = array(
+        'datasource' => 'Database/Mysql',
+        'persistent' => false,
+        'host'       => 'localhost',
+        'login'      => 'root',
+        'password'   => 'mysql',
+        'database'   => 'agenda_test'
+    );
 }

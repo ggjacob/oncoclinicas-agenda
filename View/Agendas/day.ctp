@@ -16,10 +16,6 @@
                 </div>
                 <div class="agenda-views-select">
                     <span class="agenda-view selected">DIA</span>
-                    <span> | </span>
-                    <span>SEMANA</span>
-                    <span> | </span>
-                    <span>MÊS</span>
                 </div>
             </div>
 
