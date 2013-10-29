@@ -78,7 +78,7 @@ ONCO.Agenda.prototype.loadAppointments = function(){
     var self = this;
     $.ajax({
         type: "GET",
-        url: "/agenda/appointments/load",
+        url: "/appointments/load",
         data: form,
         dataType: "json",
         success: function(data){
@@ -191,7 +191,7 @@ ONCO.Agenda.prototype.setListeners = function(){
 	$("#add_appointment").click(function(e){
 		e.preventDefault();
 		var form = $("#AppointmentDayForm").serialize();
-        var endPoint = "/agenda/appointments/add";
+        var endPoint = "/appointments/add";
         if($("#add_appointment").hasClass("editar")){
             endPoint += "/" + $(".id-field");
             $("#add_appointment").removeClass("editar");
@@ -247,7 +247,7 @@ ONCO.Agenda.prototype.setListeners = function(){
         var self = this;
         $.ajax({
             type: "POST",
-            url: "/agenda/appointments/delete/" + id,
+            url: "/appointments/delete/" + id,
             data: id,
 
             success: function(data){
