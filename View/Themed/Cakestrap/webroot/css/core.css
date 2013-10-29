@@ -73,6 +73,14 @@
     float: left;
 }
 
+.hidden{
+    display:none;	
+}
+
+.show-cancelar{
+    display: inline block;
+}
+
 .data-selected{
     font-size: 26px;
     color: dimgray;
