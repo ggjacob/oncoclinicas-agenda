@@ -16,6 +16,8 @@ ONCO.Agenda = function(){
     this.cleanAppointments();
     this.loadAppointments();
     this.selectedAppointment = null;
+
+    $("#AppointmentPhone").mask("(99) 9999-9999");
 };
 
 /**
@@ -60,7 +62,6 @@ ONCO.Agenda.prototype.addAppointments = function(objects){
 
     $(".appointment_schedule").click(function(e){
         e.preventDefault();
-        $(".busy").modal('hide');
         var appoint = $(this).data("appointment");
         self.loadEditForm(appoint);
     });
@@ -78,7 +79,7 @@ ONCO.Agenda.prototype.loadAppointments = function(){
     var self = this;
     $.ajax({
         type: "GET",
-        url: "/appointments/load",
+        url: "/agenda/appointments/load",
         data: form,
         dataType: "json",
         success: function(data){
@@ -134,12 +135,10 @@ ONCO.Agenda.prototype.setListeners = function(){
 		buttonText : '<span class="icon glyphicon glyphicon-calendar" ></span>',
 		showButtonPanel: true,
 		changeMonth: true,
-	      	changeYear: true,
-	      	dateFormat: "yy'-'mm'-'dd",
-	      	onSelect: function(date, object){
-//  			$(".data-selected").html(date);
-  		}
-	});
+        changeYear: true,
+        dateFormat: "yy'-'mm'-'dd",
+        minDate: new Date(1900, 1 - 1, 1)
+    });
 
     /**
      *
@@ -153,32 +152,24 @@ ONCO.Agenda.prototype.setListeners = function(){
 		var tdSelected = e.target;
 		var rowSelected = tdSelected.parentNode;
 		var tdData = rowSelected.getElementsByClassName("header-cal-day")[0];
-        	var tdSubject = rowSelected.getElementsByClassName("subject-day")[0];
-
-	        if($(tdSubject).html() != ""){
-	            var appointment = tdSubject.getElementsByClassName("appointment_schedule")[0];
-	            self.selectedAppointment = $(appointment).data("appointment");
-	            $('.busy').modal();
-	        }else{
-	            var selectedDataTime = tdData.getAttribute("data-time");
-	            $(".id-field").val("");
-	            if($("#add_appointment").hasClass("editar")){
-	                $("#add_appointment").removeClass(("editar"));
-	            }
-	            $(".date-field").val(self.dateSelected);
-	            $(".time-field").val(selectedDataTime);
-	            $(".modal-title").html("Novo Agendamento");
-	            $("#cancel_appointment").addClass("hidden");
-	            $("#cancel_appointment").removeClass("show-cancelar");
-	            $("#AppointmentPatientName").val("");
-	            $("#AppointmentPatientName").prop("disabled", false);
-	            $("#AppointmentBirthDate").val("");
-	            $("#AppointmentBirthDate").prop("disabled", false);
-	            $("#AppointmentPhone").val("");
-	            $("#AppointmentDoctorName").val("");
-	            $('.appointment_modal').modal();
-        	}
-
+        var tdSubject = rowSelected.getElementsByClassName("subject-day")[0];
+        var selectedDataTime = tdData.getAttribute("data-time");
+        $(".id-field").val("");
+        if($("#add_appointment").hasClass("editar")){
+            $("#add_appointment").removeClass(("editar"));
+        }
+        $(".date-field").val(self.dateSelected);
+        $(".time-field").val(selectedDataTime);
+        $(".modal-title").html("Novo Agendamento");
+        $("#cancel_appointment").addClass("hidden");
+        $("#cancel_appointment").removeClass("show-cancelar");
+        $("#AppointmentPatientName").val("");
+        $("#AppointmentPatientName").prop("disabled", false);
+        $("#AppointmentBirthDate").val("");
+        $("#AppointmentBirthDate").prop("disabled", false);
+        $("#AppointmentPhone").val("");
+        $("#AppointmentDoctorName").val("");
+        $('.appointment_modal').modal();
 	});
 
 
@@ -191,36 +182,42 @@ ONCO.Agenda.prototype.setListeners = function(){
 
 	$("#add_appointment").click(function(e){
 		e.preventDefault();
-		var form = $("#AppointmentDayForm").serialize();
-        var endPoint = "/appointments/add";
-        if($("#add_appointment").hasClass("editar")){
-            endPoint += "/" + $(".id-field");
-            $("#add_appointment").removeClass("editar");
+        if(self.validateForm()){
+            var form = $("#AppointmentDayForm").serialize();
+            var endPoint = "/agenda/appointments/add";
+            if($("#add_appointment").hasClass("editar")){
+                endPoint += "/" + $(".id-field");
+                $("#add_appointment").removeClass("editar");
+            }
+            $.ajax({
+                type: "POST",
+                url: endPoint,
+                data: form,
+
+                success: function(data){
+                    $('.appointment_modal').modal('hide');
+                    ONCO.Agenda.cleanAppointments();
+                    ONCO.Agenda.loadAppointments();
+                    $(".success-message").html("Compromisso Agendado com Sucesso.");
+                    $('.success-modal').modal();
+                    $("#AppointmentDayForm")[0].reset();
+
+                },
+
+                error: function(data){
+                    $(".error-message").html("Erro ao Agendar Compromisso.");
+                    $('.error-modal').modal();
+                    console.log(data);
+                    $("#AppointmentDayForm")[0].reset();
+                }
+
+            });
+        }else{
+            $(".error-message").html("Todos os Campos são obrigatórios.");
+            $('.error-modal').modal();
+            $("#AppointmentDayForm")[0].reset();
         }
-		$.ajax({
-	       type: "POST",
-	       url: endPoint,
-	       data: form,
 
-	       success: function(data){
-	           $('.appointment_modal').modal('hide');
-               ONCO.Agenda.cleanAppointments();
-               ONCO.Agenda.loadAppointments();
-	           //$(".success").fadeIn(500).delay(2000).fadeOut(500);
-               $(".success-message").html("Compromisso Agendado com Sucesso.");
-               $('.success-modal').modal();
-	           $("#AppointmentDayForm")[0].reset();
-
-	       },
-
-	       error: function(data){
-               $(".error-message").html("Erro ao Agendar Compromisso.");
-               $('.error-modal').modal();
-	       	   console.log(data);
-               $("#AppointmentDayForm")[0].reset();
-	       }
-
-     	});
 	});
 
     /**
@@ -248,14 +245,13 @@ ONCO.Agenda.prototype.setListeners = function(){
         var self = this;
         $.ajax({
             type: "POST",
-            url: "/appointments/delete/" + id,
+            url: "/agenda/appointments/delete/" + id,
             data: id,
 
             success: function(data){
                 $('.appointment_modal').modal('hide');
                 ONCO.Agenda.cleanAppointments();
                 ONCO.Agenda.loadAppointments();
-                //$(".success").fadeIn(500).delay(2000).fadeOut(500);
                 $(".success-message").html("Compromisso Cancelado com Sucesso.");
                 $('.success-modal').modal();
                 $("#AppointmentDayForm")[0].reset();
@@ -284,8 +280,35 @@ ONCO.Agenda.prototype.loadEditForm = function(appoint){
     $("#AppointmentPhone").val(appoint.phone);
     $("#AppointmentDoctorName").val(appoint.doctor_name);
     $(".id-field").val(appoint.id);
+    $(".date-field").val(appoint.date);
+    $(".time-field").val(appoint.time);
     $("#add_appointment").addClass("editar");
     $('.appointment_modal').modal();
+};
+
+
+ONCO.Agenda.prototype.validateForm = function(){
+
+    var valid = true;
+
+    if($("#AppointmentPatientName").val() === ""){
+        valid = false;
+    }
+
+    if($("#AppointmentBirthDate").val() === ""){
+        valid = false;
+    }
+
+    if($("#AppointmentPhone").val() === ""){
+        valid = false;
+    }
+
+    if($("#AppointmentDoctorName").val() === ""){
+        valid = false;
+    }
+
+    return valid;
+
 };
 
 /**

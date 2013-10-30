@@ -45,6 +45,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			echo $this->Html->script('libs/bootstrap.min');
 			
 			echo $this->Html->script('agenda');
+            echo $this->Html->script('jquery.maskedinput.min');
 			echo $this->fetch('script');
 		?>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>

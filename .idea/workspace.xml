@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="678df91e-0d72-4bbf-9bb6-aea73de6d756" name="Default" comment="" />
+    <list default="true" id="678df91e-0d72-4bbf-9bb6-aea73de6d756" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Themed/Cakestrap/Layouts/agenda.ctp" afterPath="$PROJECT_DIR$/View/Themed/Cakestrap/Layouts/agenda.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/agenda.js" afterPath="$PROJECT_DIR$/webroot/js/agenda.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/persistent/agenda_cake_core_method_cache" afterPath="$PROJECT_DIR$/tmp/cache/persistent/agenda_cake_core_method_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="agenda.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/AppointmentsController.php" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383071939411" ignored="false" />
     <file path="/message.ctp" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383007790150" ignored="false" />
     <file path="/day.ctp" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383049563681" ignored="false" />
-    <file path="/agenda.js" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383075411366" ignored="false" />
+    <file path="/agenda.js" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383145645884" ignored="false" />
     <file path="/AppController.php" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383011754834" ignored="false" />
     <file path="/a.php" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383049334912" ignored="false" />
     <file path="/core.css" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383066130543" ignored="false" />
@@ -17,6 +22,7 @@
     <file path="/success_appointment.ctp" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383070671315" ignored="false" />
     <file path="/error_appointment.ctp" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383070627957" ignored="false" />
     <file path="/index.php" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383075942825" ignored="false" />
+    <file path="/Dummy.txt" changelist="678df91e-0d72-4bbf-9bb6-aea73de6d756" time="1383141993973" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +42,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="agenda.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="agenda.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/js/agenda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="62" selection-start="4824" selection-end="4824" vertical-scroll-proportion="-16.192308">
+            <state line="216" column="38" selection-start="6656" selection-end="6656" vertical-scroll-proportion="0.65909094">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agenda.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/agenda.sql">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agenda.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Layouts/agenda.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="60" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
@@ -48,7 +75,7 @@
       <file leaf-file-name="add_appointment.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/add_appointment.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="101" selection-start="2319" selection-end="2319" vertical-scroll-proportion="-22.083334">
+            <state line="42" column="101" selection-start="2319" selection-end="2319" vertical-scroll-proportion="-21.375">
               <folding />
             </state>
           </provider>
@@ -57,16 +84,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1479" selection-end="1564" vertical-scroll-proportion="0.28057554">
+            <state line="58" column="0" selection-start="1479" selection-end="1564" vertical-scroll-proportion="-29.5">
               <folding />
             </state>
           </provider>
@@ -75,7 +102,7 @@
       <file leaf-file-name="CacheEngine.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cakephp/lib/Cake/Cache/CacheEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="55" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-13.75">
+            <state line="47" column="55" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,6 +114,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -102,21 +137,22 @@
         <option value="$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/success_appointment.ctp" />
         <option value="$PROJECT_DIR$/View/Agendas/day.ctp" />
         <option value="$PROJECT_DIR$/Controller/AppointmentsController.php" />
-        <option value="$PROJECT_DIR$/webroot/js/agenda.js" />
         <option value="$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/add_appointment.ctp" />
         <option value="$PROJECT_DIR$/cakephp/lib/Cake/Cache/CacheEngine.php" />
         <option value="$PROJECT_DIR$/webroot/index.php" />
+        <option value="$PROJECT_DIR$/View/Themed/Cakestrap/Layouts/agenda.ctp" />
+        <option value="$PROJECT_DIR$/webroot/js/agenda.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
+    <option name="x" value="43" />
     <option name="y" value="22" />
-    <option name="width" value="1399" />
+    <option name="width" value="1397" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -142,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,6 +207,116 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Themed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cakestrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elements" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agenda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,16 +468,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="agenda" serverId="66d84538-5d06-489b-aa0e-848a8d8f3f86">
     <servers>
@@ -361,6 +507,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="678df91e-0d72-4bbf-9bb6-aea73de6d756" name="Default" comment="" />
@@ -370,14 +533,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="22" width="1399" height="878" extended-state="6" />
+    <frame x="43" y="22" width="1397" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25277162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2568468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292151" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -467,100 +630,54 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="23" selection-start="966" selection-end="966" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Case/Model/AgendaTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Agendas/day.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="377" selection-end="377" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
+        <state line="14" column="49" selection-start="377" selection-end="377" vertical-scroll-proportion="-8.75" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/success_appointment.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="684" selection-end="684" vertical-scroll-proportion="0.3941606">
-          <folding />
-        </state>
+        <state line="18" column="22" selection-start="684" selection-end="684" vertical-scroll-proportion="0.3941606" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/AppointmentsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="45" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.3649635">
-          <folding />
-        </state>
+        <state line="90" column="45" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.3649635" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/error_appointment.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="341" selection-end="362" vertical-scroll-proportion="0.17518248">
-          <folding />
-        </state>
+        <state line="8" column="11" selection-start="341" selection-end="362" vertical-scroll-proportion="0.17518248" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Agendas/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47482014">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47482014" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Case/Controller/AppointmentsControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="2" selection-start="299" selection-end="299" vertical-scroll-proportion="0.084745765">
-          <folding />
-        </state>
+        <state line="21" column="2" selection-start="299" selection-end="299" vertical-scroll-proportion="0.084745765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/Case/Controller/AgendasControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/webroot/css/core.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="17" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.9018759">
-          <folding />
-        </state>
+        <state line="76" column="17" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.9018759" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/busy_appointment.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/agenda.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="62" selection-start="4824" selection-end="4824" vertical-scroll-proportion="-16.192308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/add_appointment.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="101" selection-start="2319" selection-end="2319" vertical-scroll-proportion="-22.083334">
-          <folding />
-        </state>
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cakephp/lib/Cake/Cache/CacheEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="55" selection-start="1362" selection-end="1362" vertical-scroll-proportion="-13.75">
+        <state line="47" column="55" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -574,7 +691,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1479" selection-end="1564" vertical-scroll-proportion="0.28057554">
+        <state line="58" column="0" selection-start="1479" selection-end="1564" vertical-scroll-proportion="-29.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Layouts/agenda.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="60" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-20.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Themed/Cakestrap/Elements/modal/add_appointment.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="101" selection-start="2319" selection-end="2319" vertical-scroll-proportion="-21.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agenda.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/agenda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="216" column="38" selection-start="6656" selection-end="6656" vertical-scroll-proportion="0.65909094">
           <folding />
         </state>
       </provider>
