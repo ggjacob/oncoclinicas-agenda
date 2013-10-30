@@ -1,3 +1,41 @@
+Desafio PHP
+
+O Desafio foi desenvolvido em CakePHP, jQuery e Twitter Bootstrap Framework e Bibliotecas.
+
+Endereço do Código Fonte no GitHub
+https://github.com/jrvlima/oncoclinicas-agenda
+
+Endereço do Repositório Remoto no GitHub
+git@github.com:jrvlima/oncoclinicas-agenda.git
+
+Endereço de Teste
+http://agenda.vilivesoft.com/agendas/day
+
+Instruções para deploy do código local
+
+•	Atualizar arquivo database.php
+o	ROOT da APP/Config/database.php
+
+•	Rodar script mysql
+o	ROOT da APP/agenda.sql
+
+•	Ativar módulo rewrite no servidor apache
+
+•	Criar link simbólico em /etc/apache2/mods-enable
+o	ln –s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enable/rewrite.load
+
+•	Atribuir permissão para diretório tmp
+o	chmod –R 777 ROOT da APP/tmp
+
+•	Copiar código para /var/www
+
+•	Link Local
+•	http://localhost/agenda/agendas/day
+
+
+####################################################################################################
+
+
 Cakestrap v.1.3
 ===============
 
@@ -22,4 +60,5 @@ Changelog
 	*  Update Twitter Bootstrap to version 2.3.1
 * v.1.0
 	* Initial release
+
 
