@@ -19,6 +19,3 @@ before_script:
       'persistent' => false,
     );
     }" > ../cakephp/app/Config/database.php
- 
-script:
-  - 
