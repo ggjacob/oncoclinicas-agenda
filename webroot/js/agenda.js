@@ -168,7 +168,8 @@ ONCO.Agenda.prototype.setListeners = function(){
             $(".date-field").val(self.dateSelected);
             $(".time-field").val(selectedDataTime);
             $(".modal-title").html("Novo Agendamento");
-            $("#cancel_appointment").css("display", "none");
+            $("#cancel_appointment").addClass("hidden");
+            $("#cancel_appointment").removeClass("show-cancelar");
             $("#AppointmentPatientName").val("");
             $("#AppointmentPatientName").prop("disabled", false);
             $("#AppointmentBirthDate").val("");
@@ -274,7 +275,8 @@ ONCO.Agenda.prototype.setListeners = function(){
 
 ONCO.Agenda.prototype.loadEditForm = function(appoint){
     $(".modal-title").html("Agendamento");
-    $("#cancel_appointment").css("display", "inline block");
+    $("#cancel_appointment").removeClass("hidden");
+    $("#cancel_appointment").addClass("show-cancelar");
     $("#AppointmentPatientName").val(appoint.patient_name);
     $("#AppointmentPatientName").prop("disabled", true);;
     $("#AppointmentBirthDate").val(appoint.birth_date);
