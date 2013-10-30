@@ -134,9 +134,9 @@ ONCO.Agenda.prototype.setListeners = function(){
 		buttonText : '<span class="icon glyphicon glyphicon-calendar" ></span>',
 		showButtonPanel: true,
 		changeMonth: true,
-      	changeYear: true,
-      	dateFormat: "yy'-'mm'-'dd",
-      	onSelect: function(date, object){
+	      	changeYear: true,
+	      	dateFormat: "yy'-'mm'-'dd",
+	      	onSelect: function(date, object){
 //  			$(".data-selected").html(date);
   		}
 	});
@@ -153,31 +153,31 @@ ONCO.Agenda.prototype.setListeners = function(){
 		var tdSelected = e.target;
 		var rowSelected = tdSelected.parentNode;
 		var tdData = rowSelected.getElementsByClassName("header-cal-day")[0];
-        var tdSubject = rowSelected.getElementsByClassName("subject-day")[0];
+        	var tdSubject = rowSelected.getElementsByClassName("subject-day")[0];
 
-        if($(tdSubject).html() != ""){
-            var appointment = tdSubject.getElementsByClassName("appointment_schedule")[0];
-            self.selectedAppointment = $(appointment).data("appointment");
-            $('.busy').modal();
-        }else{
-            var selectedDataTime = tdData.getAttribute("data-time");
-            $(".id-field").val("");
-            if($("#add_appointment").hasClass("editar")){
-                $("#add_appointment").removeClass(("editar"));
-            }
-            $(".date-field").val(self.dateSelected);
-            $(".time-field").val(selectedDataTime);
-            $(".modal-title").html("Novo Agendamento");
-            $("#cancel_appointment").addClass("hidden");
-            $("#cancel_appointment").removeClass("show-cancelar");
-            $("#AppointmentPatientName").val("");
-            $("#AppointmentPatientName").prop("disabled", false);
-            $("#AppointmentBirthDate").val("");
-            $("#AppointmentBirthDate").prop("disabled", false);
-            $("#AppointmentPhone").val("");
-            $("#AppointmentDoctorName").val("");
-            $('.appointment_modal').modal();
-        }
+	        if($(tdSubject).html() != ""){
+	            var appointment = tdSubject.getElementsByClassName("appointment_schedule")[0];
+	            self.selectedAppointment = $(appointment).data("appointment");
+	            $('.busy').modal();
+	        }else{
+	            var selectedDataTime = tdData.getAttribute("data-time");
+	            $(".id-field").val("");
+	            if($("#add_appointment").hasClass("editar")){
+	                $("#add_appointment").removeClass(("editar"));
+	            }
+	            $(".date-field").val(self.dateSelected);
+	            $(".time-field").val(selectedDataTime);
+	            $(".modal-title").html("Novo Agendamento");
+	            $("#cancel_appointment").addClass("hidden");
+	            $("#cancel_appointment").removeClass("show-cancelar");
+	            $("#AppointmentPatientName").val("");
+	            $("#AppointmentPatientName").prop("disabled", false);
+	            $("#AppointmentBirthDate").val("");
+	            $("#AppointmentBirthDate").prop("disabled", false);
+	            $("#AppointmentPhone").val("");
+	            $("#AppointmentDoctorName").val("");
+	            $('.appointment_modal').modal();
+        	}
 
 	});
 
